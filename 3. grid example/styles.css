@@ -1,0 +1,14 @@
+.block{
+    background: pink;
+    display: block;
+}
+
+.grid{
+    background: papayawhip;
+    display: grid;
+}
+
+.flex{
+    background: purple;
+    display: flex;
+}
