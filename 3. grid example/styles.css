@@ -1,14 +1,19 @@
-.block{
+.container1{
     background: pink;
-    display: block;
+    display: grid;
+    grid-template-columns: 20px 20px 20px 20px 20px ;
+    grid-template-rows: 20px 20px 20px 20px 20px ;
 }
-
-.grid{
+.container2{
     background: papayawhip;
     display: grid;
+    grid-template-columns: repeat(5,20px) ;
+    grid-template-rows: repeat(5,20px);
 }
 
-.flex{
+.container3{
     background: purple;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(5,20px) ;
+    grid-template-rows: repeat(5,20px);
 }
