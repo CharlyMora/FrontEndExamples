@@ -1,0 +1,48 @@
+.container{
+    display: grid;
+    background: red;
+    border: 8px dashed teal;
+    /* gap: 1px; */
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 90px 90px;
+
+}
+
+.container2{
+    display: grid;
+    background: red;
+    border: 8px dashed teal;
+    /* gap: 1px; */
+    grid-template-columns: repeat(4, minmax(100px, 150px));
+    grid-template-rows: 90px 90px;
+
+}
+
+.item-a{
+
+    background: blue;
+    border: 4px solid hotpink;
+    width: 100px;
+    
+}
+
+.item-b{
+
+    background: blueviolet;
+    border: 4px solid hotpink;
+    width: 100px;
+}
+.item-c{
+
+    background: violet;
+    border: 4px solid hotpink;
+    width: 150px;
+    
+}
+
+.item-d{
+
+    background: greenyellow;
+    border: 4px solid hotpink;
+    width: 200px;
+}
