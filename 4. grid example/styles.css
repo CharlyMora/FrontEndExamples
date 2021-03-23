@@ -3,6 +3,7 @@
     display: grid;
     width: 900px;
     height: 900px;
+    justify-content: center;
 }
 
 .container{
