@@ -4,7 +4,7 @@
     border: 8px dashed teal;
     /* gap: 1px; */
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 90px 90px;
+    grid-template-rows: 250px 90px;
 
 }
 
@@ -12,31 +12,28 @@
     display: grid;
     background: red;
     border: 8px dashed teal;
-    /* gap: 1px; */
-    grid-template-columns: repeat(4, minmax(100px, 150px));
-    grid-template-rows: 90px 90px;
+    /* when we have images and don't want them to be too deformed */
+    grid-template-columns: repeat( auto-fit , minmax(266px, 1fr));
+    grid-template-rows: repeat(4,266px)
 
 }
 
 .item-a{
 
     background: blue;
-    border: 4px solid hotpink;
-    width: 100px;
-    
+    border: 4px solid hotpink;    
 }
 
 .item-b{
-
     background: blueviolet;
     border: 4px solid hotpink;
-    width: 100px;
+    
 }
 .item-c{
 
     background: violet;
     border: 4px solid hotpink;
-    width: 150px;
+    
     
 }
 
@@ -44,5 +41,4 @@
 
     background: greenyellow;
     border: 4px solid hotpink;
-    width: 200px;
 }
