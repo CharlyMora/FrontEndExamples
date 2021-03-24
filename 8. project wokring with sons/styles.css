@@ -7,17 +7,60 @@ body{
 
 .container2{
     display: grid;
-    grid-template: repeat( 2, 1fr)/repeat( 2, 1fr);
+    grid-template: repeat( 2, 1fr)/repeat( 3, 1fr);
+    /* width: 60px; */
     height: 100vh;
-    grid-template-areas: 
+    /* grid-template-areas: 
     "card1 card2"
     "card1 card3"
-    ;
+    ; */
     /* border: 8px dashed teal; */
 
 }
 
-.item-a{
+.item:not(:nth-child(-n+4)){
+    background: red;
+   }
+.item:nth-child(1){
+    background: yellow;
+    justify-self: end;
+}
+
+.item:nth-child(2){
+    background: blue;
+    justify-self:center;
+}
+.item:nth-child(3){
+    background: green;
+    align-self:center;
+    justify-self:center;
+}
+
+.item:nth-child(4){
+    background: pink;
+    place-self: center stretch;
+    /* text-align: center; */
+}
+
+
+
+/* si sirve
+.item:not(:nth-child(1)):not(:nth-child(2)):not(:nth-child(3)){
+    background: red;
+} */
+
+/* no sirven
+.item:not(:nth-child(1):nth-child(2):nth-child(3)){
+    background: red;
+}
+
+.item:not(:nth-child(1, 2, 3)){
+    background: red;
+} */
+
+
+
+/* .item-a{
     grid-area: card1;
     background: yellow; 
 }
@@ -28,4 +71,4 @@ body{
 .item-c{
     grid-area: card3;
     background: red; 
-}
+} */
