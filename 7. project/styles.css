@@ -1,0 +1,22 @@
+body{
+
+}
+
+
+.container2{
+    display: grid;
+    justify-items: center;
+    background: red;
+    border: 8px dashed teal;
+    /* when we have images and don't want them to be too deformed */
+    grid-template-columns: repeat( auto-fit , minmax(100px, 1fr));
+    grid-template-rows: repeat(2,150px)
+
+}
+
+.item-a{
+
+    background: blue;
+    border: 4px solid hotpink;
+    width: 100px;
+}
